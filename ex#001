@@ -1,3 +1,5 @@
+#Old
+
 n = input('Digite o texto todo em maiúscula: ')
 res = n.isupper()
 
@@ -9,3 +11,10 @@ while res != True:
 if res == True:
   
   print('Texto correto!')
+
+#New
+
+n = input('Digite o texto todo em maiúscula: ')
+while not n.isupper():
+    n = input('Texto errado, digite tudo em maiúscula: ')
+print('Texto correto!')
